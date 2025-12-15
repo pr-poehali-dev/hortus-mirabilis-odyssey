@@ -61,7 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				rose: {
+					DEFAULT: '#C94267',
+					light: '#FF6B9D',
+					lighter: '#FFB6C1'
+				},
+				beige: '#E8D5C4',
+				sage: '#6B8E6B',
+				forest: '#2D4A2D'
+			},
+			fontFamily: {
+				serif: ['Cormorant', 'serif'],
+				sans: ['Open Sans', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
