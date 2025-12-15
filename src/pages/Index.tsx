@@ -96,7 +96,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="HORTUS MIRABILIS" className="h-12" />
+            <img src="https://cdn.poehali.dev/files/Снимок экрана 2025-12-15 122634.png" alt="HORTUS MIRABILIS" className="h-12" />
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#catalog" className="text-sm font-medium transition-colors hover:text-primary">Каталог</a>
@@ -332,7 +332,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="HORTUS MIRABILIS" className="h-10" />
+                <img src="https://cdn.poehali.dev/files/Снимок экрана 2025-12-15 122634.png" alt="HORTUS MIRABILIS" className="h-10" />
               </div>
               <p className="text-sm text-muted-foreground">
                 Ботаническая одиссея.<br />Экспедиция за живым сокровищем.
