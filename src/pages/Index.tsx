@@ -352,15 +352,15 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex gap-2">
                   <Icon name="Mail" size={16} className="mt-0.5" />
-                  <span>info@hortus-mirabilis.ru</span>
+                  <span>nekludovaann@gmail.com</span>
                 </li>
                 <li className="flex gap-2">
                   <Icon name="Phone" size={16} className="mt-0.5" />
-                  <span>+7 (999) 123-45-67</span>
+                  <span>+7 (987) 079-70-61</span>
                 </li>
                 <li className="flex gap-2">
                   <Icon name="MapPin" size={16} className="mt-0.5" />
-                  <span>Москва, ул. Ботаническая, 1</span>
+                  <span>Москва, Зеленоград, ул. Юности 9</span>
                 </li>
               </ul>
             </div>
