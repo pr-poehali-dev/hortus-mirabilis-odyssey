@@ -308,19 +308,85 @@ const Index = () => {
 
       <section id="contact" className="py-20 bg-muted/30">
         <div className="container">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="font-serif text-4xl font-bold mb-6">Онлайн консультация</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Наши ботанические эксперты готовы ответить на ваши вопросы и помочь выбрать идеальное растение для вашей коллекции.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="gap-2">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-4xl font-bold mb-6">Онлайн консультация</h2>
+              <p className="text-lg text-muted-foreground">
+                Наши ботанические эксперты готовы ответить на ваши вопросы и помочь выбрать идеальное растение для вашей коллекции.
+              </p>
+            </div>
+            
+            <Card className="p-8">
+              <form onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                const data = {
+                  name: formData.get('name'),
+                  contact: formData.get('contact'),
+                  message: formData.get('message')
+                };
+                console.log('Заявка на консультацию:', data);
+                alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+                e.currentTarget.reset();
+              }}>
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="text-sm font-medium">
+                      Ваше имя
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      className="w-full px-4 py-3 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring"
+                      placeholder="Анна Неклюдова"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="contact" className="text-sm font-medium">
+                      Телефон или Email
+                    </label>
+                    <input
+                      id="contact"
+                      name="contact"
+                      type="text"
+                      required
+                      className="w-full px-4 py-3 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring"
+                      placeholder="+7 (987) 079-70-61"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-medium">
+                      Ваш вопрос (необязательно)
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      className="w-full px-4 py-3 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring resize-none"
+                      placeholder="Расскажите, какое растение вас интересует или какой вопрос вы хотели бы обсудить..."
+                    />
+                  </div>
+
+                  <Button type="submit" size="lg" className="w-full gap-2">
+                    <Icon name="Send" size={18} />
+                    Отправить заявку
+                  </Button>
+                </div>
+              </form>
+            </Card>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <Button size="lg" variant="outline" className="gap-2">
                 <Icon name="MessageCircle" size={18} />
                 Написать в мессенджер
               </Button>
               <Button size="lg" variant="outline" className="gap-2">
                 <Icon name="Phone" size={18} />
-                Заказать звонок
+                Позвонить напрямую
               </Button>
             </div>
           </div>
